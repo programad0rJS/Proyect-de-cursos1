@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/AppDePeliculas.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- fontawesome Terminaste -->
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://img.repelis.id/cover/dragon-ball-super-broly.jpg" type="image/x-icon">
+    <!-- Ya Terminaste El Favicon -->
+
+
+
+</head>
+
+<body>
+    <!-- Nav    -->
+    <nav class="Navbar">
+        <h1 class="Titulos">
+            <a href="../html/AppDePeliculas.html" class="Enlaces" style="color: black;">Programador Josue</a>
+        </h1>
+
+
+    </nav>
+    <!--Terminaste  Nav-->
+    <!-- BR -->
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- TERMINASTE BR -->
+
+    <center>
+        <div class="Text-Aliengss">
+            <a href="../Paginas/SobreMi.html" accesskey="R"></a>
+
+            <form>
+                <h3 style="position: relative; left: -119px; font-family: monospace; font-size: 27px; top: -6px;">
+                    Comprar La Pelicula</h3>
+                <label for="Nombre" style="position:relative; left: -238px;"><strong>Nombre</strong></label>
+                <div>
+
+                    <input type="text" placeholder="Nombre" class="Input_Form" id="Nombre">
+                </div>
+                <label for="Apellido" style="position:relative; left: -238px;"><strong>Apellido</strong> </label>
+                <div>
+
+                    <input type="text" placeholder="Apellido" class="Input_Form" id="Apellido">
+                </div>
+                <label for="Email" style="position:relative; left: -247px;"><strong>Email</strong></label>
+                <div>
+
+                    <input type="text" placeholder="josuerodriguezfasa@gmail.com" class="Input_Form" id="Email">
+                </div>
+
+                <label for="Textareas" style="position:relative; left: -230px;"><strong>Textareas</strong></label>
+                <div>
+
+                    <textarea placeholder="Textareas" class="Input_Form" id="Textareas">Escribe Texto</textarea>
+                </div>
+
+                <div>
+                    <button class="Submits" onclick=" Validarlo()" style="position: relative;
+                    left: -229px;
+                    ">Comprar</button>
+                    <p class="Peliculas" id="Resultado"></p>
+                </div>
+            </form>
+        </div>
+
+    </center>
+    <br><br><br><br><br><br><br><br><br><br>
+    <script>
+        const Nombre = document.querySelector('#Nombre');
+        const Apellido = document.querySelector('#Apellido');
+        const Email = document.querySelector('#Email');
+        const Resultado = document.querySelector('#Resultado');
+        const Textareas = document.querySelector('#Textareas');
+        Resultado.style.color = 'blue';
+
+
+
+        function Validarlo() {
+
+
+            var MensajeDeError = [];
+
+            if (Nombre.value === null || Nombre.value === '') {
+                MensajeDeError.push('Ingresa Tus Datos')
+            }
+
+            if (Apellido.value === null || Apellido.value === '') {
+                MensajeDeError.push('Ingresa Tus Apellido')
+            }
+
+
+            if (Email.value === null || Email.value === '') {
+                MensajeDeError.push('Ingresa Tus Email ')
+            }
+            if (Textareas.value === null || Textareas.value === '') {
+                MensajeDeError.push('Ingresa Tus Texto ')
+            }
+            //   _________________________________________________
+
+            if (Nombre.value === null || Nombre.value === 'Josue') {
+                MensajeDeError.push('')
+            }
+
+            if (Apellido.value === null || Apellido.value === 'Rodriguez') {
+                MensajeDeError.push('')
+            }
+
+
+
+            if (Textareas.value === null || Textareas.value === 'Quiero Ver La Pelicula') {
+                MensajeDeError.push('Exito, La Compra Esta En El Camino ')
+            }
+
+
+
+            Resultado.innerHTML = MensajeDeError
+
+
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

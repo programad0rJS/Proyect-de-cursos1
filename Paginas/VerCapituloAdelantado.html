@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/video-js.css">
+	<script src="js/video.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="../css/AppDePeliculas.css">
+    <title>Capitulo 2</title>
+</head>
+<body>
+    
+
+    <br>
+	<nav>
+		<h1 class="Titulos">
+            <a href="../html/AppDePeliculas.html" class="Enlaces" style="color: black; position: relative; left: 20px;">Programador Josue</a>
+        </h1>
+	</nav>
+
+	<main>
+		<div class="contenedor">
+			<video class="fm-video video-js vjs-16-9 vjs-big-play-centered" data-setup="{}" controls id="fm-video">
+				<source src="../assets/videos/People - 84973.mp4" type="video/mp4">
+			</video>
+	
+		
+		</div>
+	</main>
+	<br>
+	<div>
+		<a href="VerGratis.html" style="text-decoration: none; position: relative; left: 100rem; top: -30rem; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 3rem;">
+
+			Ver Atras
+		</a>
+	</div>
+    
+	<script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+
+
+</body>
+</html>

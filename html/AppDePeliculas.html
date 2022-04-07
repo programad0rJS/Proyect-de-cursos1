@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>peliplus</title>
+    <link rel="stylesheet" href="../css/AppDePeliculas.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="https://img.repelis.id/cover/dragon-ball-super-broly.jpg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color: white;" >
+    
+    <nav class="Navbar">
+        <a href="../Paginas/AppDeInformacion.html" accesskey="X"> </a>
+        <h1 class="Titulos">
+            <a href="#" class="Enlaces" style="color: black;">Programador Josue</a>
+        </h1>
+        <div class="Buscar">
+            <input type="search" placeholder="Buscador De Peliculas" id="Formulario" required>
+            <div class="btn">
+                <i class="fas fa-search icon"></i>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <span onclick="closeNav()" style="color: white; font-size: 50px; cursor: pointer;">&Chi;</span>
+         
+            <a href="../Paginas/SobreMi.html">Sobre Mi</a>
+            <a href="../Paginas/Contacto.html">Contactarme </a>
+           
+          
+        </div>
+        <span style="position: relative; font-size:30px;color: black; cursor:pointer; left: 1142px; top: -42px;"
+            onclick="openNav()">&#9776; </span>
+    </nav>
+    <div id="Scrool"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <main class="Margenes">
+        <article>
+            <ul id="Resultado" class="RS">
+            </ul>
+        </article>
+    </main>
+    
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+
+
+
+
+
+
+
+
+    <script src="../js/AppDePeliculas.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "1359px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script src="../js/Scrool.js"></script>
+
+    <footer class="Foooters">
+        <h1 class="FoootersTitulos">
+            Gracias Por Visitar  
+        </h1>
+    </footer>
+
+</body>
+
+</html>
